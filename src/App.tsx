@@ -1,13 +1,11 @@
-import { useEffect } from 'react';
+import { useEffect } from 'react'
 
 function App() {
   useEffect(() => {
-    console.log("Welcome to the Safe Guardians Page") //Remove
+    console.log('Welcome to the Safe Guardians Page') //Remove
   }, [])
 
-  return (
-    <div></div>
-  );
+  return <div></div>
 }
 
-export default App;
+export default App
