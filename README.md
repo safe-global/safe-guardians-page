@@ -1,9 +1,15 @@
-# Safe Guardians Page
+# Safe Landing Page
 
-![license](https://img.shields.io/github/license/gnosis/safe-guardians-page)
-![release](https://img.shields.io/github/v/release/gnosis/safe-guardians-page)
+![license](https://img.shields.io/github/license/gnosis/safe-landing-page)
+![release](https://img.shields.io/github/v/release/gnosis/safe-landing-page)
 
-This page is dedicated to the Safe Guardians program, a program designed to reward active members of the Safe community, who use their powers to contribute positively to the ecosystem.
+![og-image](https://user-images.githubusercontent.com/6764315/154456671-7b8a9aea-9b69-43de-bd8e-a57b84f53844.png)
+
+# Deployed environments
+
+- Production: https://gnosis-safe.io
+- Staging: http://safe-team.staging.gnosisdev.com
+- Development: http://safe-team.dev.gnosisdev.com
 
 ## Getting Started
 
