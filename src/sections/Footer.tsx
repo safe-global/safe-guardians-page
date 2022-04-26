@@ -55,17 +55,21 @@ function Footer() {
   return (
     <FooterContainer>
       <SocialBlock>
-        <Link href="https://twitter.com/gnosissafe" target="_blank">
+        <Link href="https://twitter.com/gnosissafe" target="_blank" rel="noopener noreferrer">
           <Icon>
             <TwitterIcon />
           </Icon>
         </Link>
-        <Link href="https://github.com/safe-global" target="_blank">
+        <Link href="https://github.com/safe-global" target="_blank" rel="noopener noreferrer">
           <Icon>
             <GithubIcon />
           </Icon>
         </Link>
-        <Link href="https://discord.com/invite/AjG7AQD9Qn" target="_blank">
+        <Link
+          href="https://discord.com/invite/AjG7AQD9Qn"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <Icon>
             <DiscordIcon />
           </Icon>

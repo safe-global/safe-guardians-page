@@ -103,17 +103,21 @@ function PoweredBy() {
           Gnosis Safe
         </STitle>
         <SocialBlock>
-          <Link href="https://twitter.com/gnosissafe" target="_blank">
+          <Link href="https://twitter.com/gnosissafe" target="_blank" rel="noopener noreferrer">
             <Icon>
               <TwitterIcon />
             </Icon>
           </Link>
-          <Link href="https://github.com/safe-global" target="_blank">
+          <Link href="https://github.com/safe-global" target="_blank" rel="noopener noreferrer">
             <Icon>
               <GithubIcon />
             </Icon>
           </Link>
-          <Link href="https://discord.com/invite/AjG7AQD9Qn" target="_blank">
+          <Link
+            href="https://discord.com/invite/AjG7AQD9Qn"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Icon>
               <DiscordIcon />
             </Icon>
@@ -124,7 +128,7 @@ function PoweredBy() {
         <Details size="md" withoutMargin>
           Want to know more details?
         </Details>
-        <Link href="https://gnosis-safe.io" target="_blank">
+        <Link href="https://gnosis-safe.io" target="_blank" rel="noopener noreferrer">
           <WhiteButton>
             <Title size="sm" strong withoutMargin>
               Read the blog post

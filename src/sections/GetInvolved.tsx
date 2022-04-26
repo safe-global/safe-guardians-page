@@ -71,14 +71,18 @@ function GetInvolved() {
         </STitle>
       </Description>
       <CallsToAction>
-        <SLink href="https://discord.com/invite/AjG7AQD9Qn" target="_blank">
+        <SLink
+          href="https://discord.com/invite/AjG7AQD9Qn"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <GreenButton>
             <Title size="sm" strong withoutMargin>
               Join our Discord
             </Title>
           </GreenButton>
         </SLink>
-        <Link href="https://forum.gnosis-safe.io" target="_blank">
+        <Link href="https://forum.gnosis-safe.io" target="_blank" rel="noopener noreferrer">
           <WhiteButton>
             <Title size="sm" strong withoutMargin>
               Start a proposal

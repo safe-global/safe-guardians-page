@@ -88,7 +88,7 @@ function MainSection() {
     <Section>
       <BgDesktopImage loop autoPlay muted src={DesktopStaticWithMasthead} />
       <BgMobileImage loop autoPlay muted src={MobileStaticWithMasthead} />
-      <Link href="https://gnosis-safe.io" target="_blank">
+      <Link href="https://gnosis-safe.io" target="_blank" rel="noopener noreferrer">
         <PoweredBy>
           <Text color="white" size="xl">
             Powered by
@@ -100,7 +100,11 @@ function MainSection() {
       <SVol1>
         <Vol1 />
       </SVol1>
-      <LinkSubmit href="https://gnosis1.typeform.com/to/o0HCFW4k" target="_blank">
+      <LinkSubmit
+        href="https://gnosis1.typeform.com/to/o0HCFW4k"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <Button>
           <STitle size="xs" strong withoutMargin>
             Submit an application

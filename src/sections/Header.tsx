@@ -84,23 +84,31 @@ function Header() {
       <SLogoHorizontal />
       <Right>
         <SocialBlock>
-          <Link href="https://twitter.com/gnosissafe" target="_blank">
+          <Link href="https://twitter.com/gnosissafe" target="_blank" rel="noopener noreferrer">
             <Icon>
               <TwitterIcon />
             </Icon>
           </Link>
-          <Link href="https://github.com/safe-global" target="_blank">
+          <Link href="https://github.com/safe-global" target="_blank" rel="noopener noreferrer">
             <Icon>
               <GithubIcon />
             </Icon>
           </Link>
-          <Link href="https://discord.com/invite/AjG7AQD9Qn" target="_blank">
+          <Link
+            href="https://discord.com/invite/AjG7AQD9Qn"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Icon>
               <DiscordIcon />
             </Icon>
           </Link>
         </SocialBlock>
-        <LinkSubmit href="https://gnosis1.typeform.com/to/o0HCFW4k" target="_blank">
+        <LinkSubmit
+          href="https://gnosis1.typeform.com/to/o0HCFW4k"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <Button>
             <Text size="lg" color="white" strong>
               Submit

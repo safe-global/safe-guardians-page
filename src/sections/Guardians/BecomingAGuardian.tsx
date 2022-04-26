@@ -201,7 +201,11 @@ function BecomingAGuardian() {
         <LeftColumn>
           <BecomingAGuardianImg src={BecomingAGuardianImage} />
           <Submission>
-            <SLink href="https://gnosis1.typeform.com/to/o0HCFW4k" target="_blank">
+            <SLink
+              href="https://gnosis1.typeform.com/to/o0HCFW4k"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <SubmissionButton>
                 <STitle size="sm" strong withoutMargin>
                   Submit an application
