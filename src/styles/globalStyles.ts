@@ -1,6 +1,4 @@
 import { createGlobalStyle } from 'styled-components'
-import avertaBold from './fonts/Averta-ExtraBold.woff2'
-import averta from './fonts/Averta-normal.woff2'
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -12,31 +10,30 @@ const GlobalStyle = createGlobalStyle`
   @font-face {
     font-family: 'Averta';
     src: local('Averta'),
-    url(${averta}) format('woff2');
+    url('fonts/Averta-normal.woff2') format('woff2');
   }
 
   @font-face {
     font-family: 'AvertaBold';
     src: local('Averta Bold'),
-    url(${avertaBold}) format('woff');
+    url('/fonts/Averta-ExtraBold.woff2') format('woff');
   }
 
   html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
     background: linear-gradient(180deg, #1F3044 16.37%, #0A111F 59.27%, #162333 100%);
-  }
-
-  h2 {
-    font-size: 48px !important;
-  }
-
-  h3 {
-    --font-size: 44px !important;
-    line-height: 42px !important;
   }
 
   a {
     text-decoration: none !important;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+     user-select: none;
   }
 `
 

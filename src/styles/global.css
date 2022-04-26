@@ -1,0 +1,43 @@
+@font-face {
+  font-family: 'Averta';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/Averta-normal.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'AvertaBold';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url('/fonts/Averta-ExtraBold.woff2') format('woff2');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  background: linear-gradient(180deg, #1F3044 16.37%, #0A111F 59.27%, #162333 100%);
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  min-height: 100%;
+}
+
+a {
+  text-decoration: none !important;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+   user-select: none;
+}
