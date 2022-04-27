@@ -1,3 +1,4 @@
+import React from 'react'
 import BecomingAGuardian from './BecomingAGuardian'
 import WhatAreGuardians from './Guardians'
 import NextMission from './NextMision'
