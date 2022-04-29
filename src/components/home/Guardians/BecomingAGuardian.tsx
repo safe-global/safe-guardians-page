@@ -1,3 +1,4 @@
+import { Link } from 'gatsby'
 import React from 'react'
 import styled from 'styled-components'
 import Dots23 from '../../../images/dots-23.svg'
@@ -233,13 +234,13 @@ function BecomingAGuardian() {
             <BecomingAGuardianImg src="/images/section3.png" />
           </AnonsImage>
           <Submission>
-            <a href="/form">
+            <Link to="/form">
               <SubmissionButton>
                 <Text size="md" color="white" strong withoutMargin>
                   Submit an application
                 </Text>
               </SubmissionButton>
-            </a>
+            </Link>
             <Text size="sm" color="white">
               Know someone who can be a Guardian?
             </Text>
