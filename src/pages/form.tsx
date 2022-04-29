@@ -1,4 +1,5 @@
 import { Widget } from '@typeform/embed-react'
+import { Link } from 'gatsby'
 import * as React from 'react'
 import styled from 'styled-components'
 import Header from '../components/home/Header'
@@ -44,13 +45,10 @@ const WidgetStyle = {
 export default () => (
   <Container>
     <Layout title="Safe Guardians Form">
-      <a href="/">
+      <Link to="/">
         <Header onlyTitle noMaxWidth />
-      </a>
-      <Widget
-        id="o0HCFW4k"
-        style={WidgetStyle}
-      />
+      </Link>
+      <Widget id="o0HCFW4k" style={WidgetStyle} />
       <a
         href="https://gnosis-safe.io"
         target="_blank"

@@ -1,3 +1,4 @@
+import { Link } from 'gatsby'
 import React from 'react'
 import styled from 'styled-components'
 import GnosisSafe from '../../images/GnosisSafe.svg'
@@ -51,7 +52,7 @@ const SVol1 = styled.div`
   }
 `
 
-const LinkSubmit = styled.a`
+const LinkSubmit = styled(Link)`
   @media (min-width: 801px) {
     display: none;
   }
@@ -108,7 +109,7 @@ function MainSection() {
       <SVol1>
         <Vol1 />
       </SVol1>
-      <LinkSubmit href="/form">
+      <LinkSubmit to="/form">
         <Button>
           <Text color="white" size="md" strong withoutMargin>
             Submit an application

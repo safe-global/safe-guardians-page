@@ -1,3 +1,4 @@
+import { Link } from 'gatsby'
 import React from 'react'
 import styled from 'styled-components'
 import Discord from '../../images/icons/discord.svg'
@@ -65,7 +66,7 @@ const Icon = styled.div`
   }
 `
 
-const LinkSubmit = styled.a`
+const LinkSubmit = styled(Link)`
   @media (max-width: 800px) {
     display: none;
   }
@@ -126,7 +127,7 @@ function Header({ onlyTitle, noMaxWidth }: HeadProps) {
               </Icon>
             </a>
           </SocialBlock>
-          <LinkSubmit href="/form">
+          <LinkSubmit to="/form">
             <Button>
               <Text size="xs" color="white" strong withoutMargin noLineHeight>
                 Submit
