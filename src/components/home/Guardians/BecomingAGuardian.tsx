@@ -207,8 +207,32 @@ const ShareDescription = styled(SGreenTitle)`
   margin-left: 8px;
 `
 
+const ShareFeedback = styled.div`
+  background: white;
+  position: absolute;
+  padding: 13px;
+  border-radius: 12px;
+  margin-top: 10px;
+  text-align: center;
+  display: none;
+  opacity: 0;
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  @media (max-width: 800px) {
+    margin-top: 200px;
+  }
+`
+
 function copyToClipboard() {
   navigator.clipboard.writeText('https://guardians.gnosis-safe.io')
+  const shareLabel = document.getElementById('#shareFeedback')
+  if (!shareLabel) return
+  shareLabel.style.opacity = '1'
+  shareLabel.style.display = 'block'
+  setTimeout(() => {
+    shareLabel.style.opacity = '0'
+  shareLabel.style.display = 'hidden'
+  }, 4000)
 }
 
 function BecomingAGuardian() {
@@ -250,6 +274,11 @@ function BecomingAGuardian() {
                 Share this link
               </ShareDescription>
             </ShareLink>
+            <ShareFeedback id="#shareFeedback">
+              <Text size="xs" color="#162832" withoutMargin>
+                Link copied. Mission accomplished.
+              </Text>
+            </ShareFeedback>
           </Submission>
         </LeftColumn>
         <RightColumn>
