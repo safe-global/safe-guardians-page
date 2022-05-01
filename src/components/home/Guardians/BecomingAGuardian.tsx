@@ -100,7 +100,7 @@ const STextTop = styled(Text)`
 `
 
 const SGreenTitle = styled(Text)`
-  color: #029F7F;
+  color: #029f7f;
   display: flex;
   align-items: center;
 `
@@ -231,12 +231,12 @@ function copyToClipboard() {
   shareLabel.style.display = 'block'
   setTimeout(() => {
     shareLabel.style.opacity = '0'
-  shareLabel.style.display = 'hidden'
+    shareLabel.style.display = 'hidden'
   }, 4000)
 }
 
 const Span = styled.span`
-  color: #029F7F;
+  color: #029f7f;
   font-weight: bold;
 `
 

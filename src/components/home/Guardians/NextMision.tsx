@@ -72,7 +72,7 @@ const StainImg = styled.div`
 `
 
 const Span = styled.span`
-  color: #029F7F;
+  color: #029f7f;
   font-weight: bold;
 `
 

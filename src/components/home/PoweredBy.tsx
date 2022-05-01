@@ -55,7 +55,7 @@ const SocialContainer = styled.div`
     margin-top: 55px;
   }
   & * {
-    fill: #029F7F;
+    fill: #029f7f;
   }
 `
 

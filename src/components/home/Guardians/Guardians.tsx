@@ -59,7 +59,7 @@ const Img = styled.img`
 `
 
 const Span = styled.span`
-  color: #029F7F;
+  color: #029f7f;
   font-weight: bold;
 `
 
@@ -72,7 +72,9 @@ function WhatAreGuardians() {
       <RightColumn>
         <Header>
           <Text size="xxl" strong withoutMargin>
-            What are<br/><Span>Safe Guardians?</Span>
+            What are
+            <br />
+            <Span>Safe Guardians?</Span>
           </Text>
         </Header>
         <Text size="xl">
