@@ -29,13 +29,13 @@ const CallsToAction = styled.div`
 `
 
 const Button = styled.div`
-  height: 72px;
   -webkit-tap-highlight-color: transparent;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 20px 31px;
   color: white;
+  text-align: center;
 `
 
 const GreenButton = styled(Button)`

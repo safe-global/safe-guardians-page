@@ -73,7 +73,6 @@ const LeftColumn = styled.div`
 
 const RightColumn = styled.div`
   width: 560px;
-  min-width: 360px;
   @media (max-width: 800px) {
     width: 100%;
   }
@@ -96,11 +95,12 @@ const STextContentTitle = styled(Text)`
 const STextTop = styled(Text)`
   display: inline-block;
   margin-right: 20px;
+  text-align: center;
   color: white;
 `
 
 const SGreenTitle = styled(Text)`
-  color: #008c73;
+  color: #029F7F;
   display: flex;
   align-items: center;
 `
@@ -235,6 +235,11 @@ function copyToClipboard() {
   }, 4000)
 }
 
+const Span = styled.span`
+  color: #029F7F;
+  font-weight: bold;
+`
+
 function BecomingAGuardian() {
   return (
     <Block>
@@ -245,11 +250,8 @@ function BecomingAGuardian() {
       </Forces>
       <TopColumn>
         <STextTop size="xxl" strong withoutMargin>
-          Becoming a
+          Becoming a <Span>Guardian</Span>
         </STextTop>
-        <SGreenTitle size="xxl" strong withoutMargin>
-          Guardian
-        </SGreenTitle>
       </TopColumn>
       <Content>
         <LeftColumn>

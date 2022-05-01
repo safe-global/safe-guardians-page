@@ -42,10 +42,9 @@ const RightColumn = styled.div`
 const Header = styled.div`
   width: 400px;
   @media (max-width: 800px) {
-    display: flex;
+    --display: flex;
     margin: 0 auto;
-    justify-content: space-between;
-    width: 310px;
+    width: 100%;
     text-align: center;
   }
 `
@@ -72,6 +71,11 @@ const StainImg = styled.div`
   }
 `
 
+const Span = styled.span`
+  color: #029F7F;
+  font-weight: bold;
+`
+
 function NextMission() {
   return (
     <Block>
@@ -81,10 +85,7 @@ function NextMission() {
       <LeftColumn>
         <Header>
           <Text size="xxl" strong withoutMargin>
-            Our next
-          </Text>
-          <Text color="#008c73" size="xxl" strong withoutMargin>
-            mission
+            Our next <Span>mission</Span>
           </Text>
         </Header>
         <Text size="sm">

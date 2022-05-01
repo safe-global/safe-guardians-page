@@ -55,7 +55,7 @@ const SocialContainer = styled.div`
     margin-top: 55px;
   }
   & * {
-    fill: #008c73;
+    fill: #029F7F;
   }
 `
 
@@ -69,11 +69,11 @@ const Details = styled(Text)`
 
 const Button = styled.div`
   -webkit-tap-highlight-color: transparent;
-  height: 72px;
   padding: 20px 31px;
   display: inline-block;
   background: white;
   border-radius: 16px;
+  text-align: center;
   &:hover {
     background: #b3b5c6;
     transition: all 0.2s ease;

@@ -24,7 +24,7 @@ const theme = {
     size: {
       xs: {
         fontSize: '16px',
-        lineHeight: '28px',
+        lineHeight: '24px',
       },
       sm: {
         fontSize: '20px',
@@ -39,12 +39,12 @@ const theme = {
         lineHeight: '36px',
       },
       xl: {
-        fontSize: '40px',
-        lineHeight: '49px',
+        fontSize: '28px',
+        lineHeight: '40px',
       },
       xxl: {
-        fontSize: '60px',
-        lineHeight: '79px',
+        fontSize: '48px',
+        lineHeight: '60px',
       },
     },
   },
