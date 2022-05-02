@@ -62,12 +62,7 @@ const StainImg = styled.div`
   margin-top: 130px;
   z-index: 0;
   @media (max-width: 800px) {
-    margin: 0;
-    width: 300%;
-    margin-top: -400px;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
+    display: none;
   }
 `
 

@@ -22,7 +22,6 @@
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
   background: linear-gradient(180deg, #1F3044 16.37%, #0A111F 59.27%, #162333 100%);
 }
 

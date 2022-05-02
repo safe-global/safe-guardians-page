@@ -40,7 +40,7 @@ export default ({ title, description, thumbnail, article }: IHeadProps) => (
           <html lang={language} />
           <meta
             name="viewport"
-            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+            content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
           ></meta>
           <meta name="description" content={seo.description} />
           <meta name="image" content={seo.image} />
