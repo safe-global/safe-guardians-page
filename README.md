@@ -1,15 +1,7 @@
-# Safe Landing Page
+# Safe Guardians Page
 
-![license](https://img.shields.io/github/license/gnosis/safe-landing-page)
-![release](https://img.shields.io/github/v/release/gnosis/safe-landing-page)
-
-![og-image](https://user-images.githubusercontent.com/6764315/154456671-7b8a9aea-9b69-43de-bd8e-a57b84f53844.png)
-
-# Deployed environments
-
-- Production: https://gnosis-safe.io
-- Staging: http://safe-team.staging.gnosisdev.com
-- Development: http://safe-team.dev.gnosisdev.com
+![license](https://img.shields.io/github/license/gnosis/safe-guardians-page)
+![release](https://img.shields.io/github/v/release/gnosis/safe-guardians-page)
 
 ## Getting Started
 
