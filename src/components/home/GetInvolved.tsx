@@ -29,13 +29,19 @@ const CallsToAction = styled.div`
 `
 
 const Button = styled.div`
-  height: 72px;
   -webkit-tap-highlight-color: transparent;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
   padding: 20px 31px;
   color: white;
+  text-align: center;
+  height: 64px;
+  @media (max-width: 800px) {
+    padding: 20px;
+    width: 300px;    
+  }
 `
 
 const GreenButton = styled(Button)`
@@ -70,7 +76,7 @@ function GetInvolved() {
         How else can I get involved?
       </SText>
       <Description>
-        <Text size="lg" color="white" withoutMargin>
+        <Text size="xl" color="white" withoutMargin>
           Join the conversation in our Discord or start a proposal on the Gnosis
           Safe Forum.
         </Text>

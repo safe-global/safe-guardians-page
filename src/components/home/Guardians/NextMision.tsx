@@ -42,10 +42,9 @@ const RightColumn = styled.div`
 const Header = styled.div`
   width: 400px;
   @media (max-width: 800px) {
-    display: flex;
+    --display: flex;
     margin: 0 auto;
-    justify-content: space-between;
-    width: 310px;
+    width: 100%;
     text-align: center;
   }
 `
@@ -63,13 +62,13 @@ const StainImg = styled.div`
   margin-top: 130px;
   z-index: 0;
   @media (max-width: 800px) {
-    margin: 0;
-    width: 300%;
-    margin-top: -400px;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
+    display: none;
   }
+`
+
+const Span = styled.span`
+  color: #029f7f;
+  font-weight: bold;
 `
 
 function NextMission() {
@@ -81,10 +80,7 @@ function NextMission() {
       <LeftColumn>
         <Header>
           <Text size="xxl" strong withoutMargin>
-            Our next
-          </Text>
-          <Text color="#008c73" size="xxl" strong withoutMargin>
-            mission
+            Our next <Span>mission</Span>
           </Text>
         </Header>
         <Text size="sm">

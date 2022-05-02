@@ -1,6 +1,9 @@
 import { createGlobalStyle } from 'styled-components'
+import reset from 'styled-reset'
 
 const GlobalStyle = createGlobalStyle`
+  ${reset}
+
   * {
     margin: 0;
     padding: 0;
@@ -21,7 +24,6 @@ const GlobalStyle = createGlobalStyle`
 
   html {
     scroll-behavior: smooth;
-    overflow-x: hidden;
     background: linear-gradient(180deg, #1F3044 16.37%, #0A111F 59.27%, #162333 100%);
   }
 

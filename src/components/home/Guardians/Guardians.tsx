@@ -49,11 +49,6 @@ const Header = styled.div`
   }
 `
 
-const SGreenTitle = styled(Text)`
-  color: #008c73;
-  display: inline-block;
-`
-
 const Img = styled.img`
   width: 678px;
   max-width: 100%;
@@ -61,6 +56,11 @@ const Img = styled.img`
     margin-top: 50px;
     width: 100%;
   }
+`
+
+const Span = styled.span`
+  color: #029f7f;
+  font-weight: bold;
 `
 
 function WhatAreGuardians() {
@@ -73,12 +73,11 @@ function WhatAreGuardians() {
         <Header>
           <Text size="xxl" strong withoutMargin>
             What are
+            <br />
+            <Span>Safe Guardians?</Span>
           </Text>
-          <SGreenTitle size="xxl" color="#029F7F" strong withoutMargin>
-            Safe Guardians?
-          </SGreenTitle>
         </Header>
-        <Text size="lg">
+        <Text size="xl">
           Safe Guardians are active members of the Safe community, who use their
           powers to contribute positively to the ecosystem.
         </Text>

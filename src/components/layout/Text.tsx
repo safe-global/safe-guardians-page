@@ -25,8 +25,8 @@ const StyledH1 = styled.h1<{
   margin: ${({ withoutMargin }) => (withoutMargin ? 0 : '30px')} 0;
   color: ${({ color }) => (color ? color : 'white')};
   @media (max-width: 800px) {
-    font-size: ${theme.text.size.xl.fontSize};
-    line-height: ${theme.text.size.xl.lineHeight};
+    font-size: 40px;
+    line-height: 49px;
   }
 `
 
@@ -44,8 +44,8 @@ const StyledH2 = styled.h2<{
   margin: ${({ withoutMargin }) => (withoutMargin ? 0 : '28px')} 0;
   color: ${({ color }) => (color ? color : 'white')};
   @media (max-width: 800px) {
-    font-size: ${theme.text.size.lg.fontSize};
-    line-height: ${theme.text.size.lg.lineHeight};
+    font-size: ${theme.text.size.md.fontSize};
+    line-height: ${theme.text.size.md.lineHeight};
   }
 `
 
@@ -114,6 +114,8 @@ const StyledP = styled.p<{
 }>`
   font-family: ${theme.fonts.fontFamily};
   font-size: ${theme.text.size.xs.fontSize};
+  line-height: ${({ noLineHeight }) =>
+    !noLineHeight && theme.text.size.xs.lineHeight};
   font-weight: ${({ strong }) => (strong ? 'bold' : 'normal')};
   margin: ${({ withoutMargin }) => (withoutMargin ? 0 : '18px')} 0;
   color: ${({ color }) => (color ? color : 'white')};

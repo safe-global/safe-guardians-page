@@ -73,7 +73,6 @@ const LeftColumn = styled.div`
 
 const RightColumn = styled.div`
   width: 560px;
-  min-width: 360px;
   @media (max-width: 800px) {
     width: 100%;
   }
@@ -96,11 +95,12 @@ const STextContentTitle = styled(Text)`
 const STextTop = styled(Text)`
   display: inline-block;
   margin-right: 20px;
+  text-align: center;
   color: white;
 `
 
 const SGreenTitle = styled(Text)`
-  color: #008c73;
+  color: #029f7f;
   display: flex;
   align-items: center;
 `
@@ -179,14 +179,23 @@ const Submission = styled.div`
 const SubmissionButton = styled.div`
   display: inline-block;
   -webkit-tap-highlight-color: transparent;
-  padding: 20px 31px;
+  padding: 20px;
+  width: 300px;
+  height: 64px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: #029f7f;
   border-radius: 16px;
-  margin-bottom: 15px;
+  margin-bottom: 35px;
   &:hover {
     background: #005546;
     transition: all 0.2s ease;
     -webkit-transition: 0.2s ease;
+  }
+  @media (max-width: 800px) {
+    margin-bottom: 15px;
   }
 `
 
@@ -207,9 +216,38 @@ const ShareDescription = styled(SGreenTitle)`
   margin-left: 8px;
 `
 
+const ShareFeedback = styled.div`
+  background: white;
+  position: absolute;
+  padding: 13px;
+  border-radius: 12px;
+  margin-top: 10px;
+  text-align: center;
+  display: none;
+  opacity: 0;
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  @media (max-width: 800px) {
+    margin-top: 200px;
+  }
+`
+
 function copyToClipboard() {
   navigator.clipboard.writeText('https://guardians.gnosis-safe.io')
+  const shareLabel = document.getElementById('#shareFeedback')
+  if (!shareLabel) return
+  shareLabel.style.opacity = '1'
+  shareLabel.style.display = 'block'
+  setTimeout(() => {
+    shareLabel.style.opacity = '0'
+    shareLabel.style.display = 'hidden'
+  }, 4000)
 }
+
+const Span = styled.span`
+  color: #029f7f;
+  font-weight: bold;
+`
 
 function BecomingAGuardian() {
   return (
@@ -221,11 +259,8 @@ function BecomingAGuardian() {
       </Forces>
       <TopColumn>
         <STextTop size="xxl" strong withoutMargin>
-          Becoming a
+          Becoming a <Span>Guardian</Span>
         </STextTop>
-        <SGreenTitle size="xxl" strong withoutMargin>
-          Guardian
-        </SGreenTitle>
       </TopColumn>
       <Content>
         <LeftColumn>
@@ -250,6 +285,11 @@ function BecomingAGuardian() {
                 Share this link
               </ShareDescription>
             </ShareLink>
+            <ShareFeedback id="#shareFeedback">
+              <Text size="xs" color="#162832" withoutMargin>
+                Link copied. Mission accomplished.
+              </Text>
+            </ShareFeedback>
           </Submission>
         </LeftColumn>
         <RightColumn>

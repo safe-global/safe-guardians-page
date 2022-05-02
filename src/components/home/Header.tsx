@@ -74,8 +74,7 @@ const LinkSubmit = styled(Link)`
 
 const Button = styled.div`
   -webkit-tap-highlight-color: transparent;
-  height: 42px;
-  padding: 11px 24px;
+  padding: 13px 24px;
   display: inline-block;
   background: #029f7f;
   color: white;
