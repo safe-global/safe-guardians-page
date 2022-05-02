@@ -44,7 +44,7 @@ const WidgetStyle = {
 
 export default () => (
   <Container>
-    <Layout title="Safe Guardians Form">
+    <Layout title="Safe Guardians Application">
       <Link to="/">
         <Header onlyTitle noMaxWidth />
       </Link>
