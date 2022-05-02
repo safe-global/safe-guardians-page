@@ -69,11 +69,15 @@ const Details = styled(Text)`
 
 const Button = styled.div`
   -webkit-tap-highlight-color: transparent;
-  padding: 20px 31px;
-  display: inline-block;
+  padding: 20px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: white;
   border-radius: 16px;
   text-align: center;
+  height: 64px;
   &:hover {
     background: #b3b5c6;
     transition: all 0.2s ease;
@@ -123,9 +127,9 @@ function PoweredBy() {
         </SocialContainer>
       </LeftColumn>
       <RightColumn>
-        <Details size="lg">Want to know more details?</Details>
+        <Details size="xl">Want to know more details?</Details>
         <a
-          href="https://gnosis-safe.io"
+          href="https://safe.mirror.xyz/JTOFLIYkTF8C61-DZFBB3QzhrFSsaB8kAIx153rl9Y0"
           target="_blank"
           rel="noopener noreferrer"
         >
