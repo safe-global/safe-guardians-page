@@ -44,8 +44,8 @@ const StyledH2 = styled.h2<{
   margin: ${({ withoutMargin }) => (withoutMargin ? 0 : '28px')} 0;
   color: ${({ color }) => (color ? color : 'white')};
   @media (max-width: 800px) {
-    font-size: ${theme.text.size.lg.fontSize};
-    line-height: ${theme.text.size.lg.lineHeight};
+    font-size: ${theme.text.size.md.fontSize};
+    line-height: ${theme.text.size.md.lineHeight};
   }
 `
 

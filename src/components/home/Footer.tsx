@@ -33,10 +33,10 @@ const ShieldImg = styled.div`
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
-  transition: bottom 0.5s ease;
-  -webkit-transition: bottom 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
   &:hover {
-    bottom: 0px;
+    bottom: -245px;
   }
 `
 

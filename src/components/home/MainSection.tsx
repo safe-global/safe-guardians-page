@@ -61,12 +61,16 @@ const LinkSubmit = styled(Link)`
 const Button = styled.div`
   -webkit-tap-highlight-color: transparent;
   position: absolute;
-  padding: 20px 31px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: #029f7f;
   color: white;
   border-radius: 13px;
   left: 50%;
-  width: 280px;
+  width: 300px;
+  height: 64px;
   text-align: center;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);

@@ -179,14 +179,23 @@ const Submission = styled.div`
 const SubmissionButton = styled.div`
   display: inline-block;
   -webkit-tap-highlight-color: transparent;
-  padding: 20px 31px;
+  padding: 20px;
+  width: 300px;
+  height: 64px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: #029f7f;
   border-radius: 16px;
-  margin-bottom: 15px;
+  margin-bottom: 35px;
   &:hover {
     background: #005546;
     transition: all 0.2s ease;
     -webkit-transition: 0.2s ease;
+  }
+  @media (max-width: 800px) {
+    margin-bottom: 15px;
   }
 `
 
