@@ -67,7 +67,7 @@ function MainSection() {
         loop
         autoPlay
         muted
-        src="/images/MobileAnimationwithMasthead.mp4"
+        src="/images/MobileAnimationwithMasthead-cropped.mp4"
       />
       <a
         href="https://gnosis-safe.io"
