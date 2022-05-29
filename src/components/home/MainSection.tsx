@@ -1,4 +1,3 @@
-import { Link } from 'gatsby'
 import React from 'react'
 import styled from 'styled-components'
 import GnosisSafe from '../../images/GnosisSafe.svg'
@@ -40,6 +39,9 @@ const PoweredBy = styled.div`
   & > * {
     margin-right: 3px;
   }
+  @media (max-width: 800px) {
+    bottom: 7%;
+  }
 `
 
 const SVol1 = styled.div`
@@ -47,38 +49,8 @@ const SVol1 = styled.div`
   bottom: 25%;
   right: 23%;
   @media (max-width: 800px) {
-    bottom: 34%;
+    bottom: 24%;
     right: 5%;
-  }
-`
-
-const LinkSubmit = styled(Link)`
-  @media (min-width: 801px) {
-    display: none;
-  }
-`
-
-const Button = styled.div`
-  -webkit-tap-highlight-color: transparent;
-  position: absolute;
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #029f7f;
-  color: white;
-  border-radius: 13px;
-  left: 50%;
-  width: 300px;
-  height: 64px;
-  text-align: center;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-  bottom: 14%;
-  &:hover {
-    background: #005546;
-    transition: all 0.2s ease;
-    -webkit-transition: 0.2s ease;
   }
 `
 
@@ -113,13 +85,6 @@ function MainSection() {
       <SVol1>
         <Vol1 />
       </SVol1>
-      <LinkSubmit to="/form">
-        <Button>
-          <Text color="white" size="md" strong withoutMargin>
-            Submit an application
-          </Text>
-        </Button>
-      </LinkSubmit>
     </Section>
   )
 }

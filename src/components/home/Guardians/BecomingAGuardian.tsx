@@ -1,9 +1,7 @@
-import { Link } from 'gatsby'
 import React from 'react'
 import styled from 'styled-components'
 import Dots23 from '../../../images/dots-23.svg'
 import CheckIcon from '../../../images/icons/check.svg'
-import ShareIcon from '../../../images/icons/share.svg'
 import Text from '../../layout/Text'
 
 const Block = styled.div`
@@ -161,89 +159,6 @@ const GreenNumber = styled(Number)`
   padding-top: 14px;
 `
 
-const Submission = styled.div`
-  margin-top: 45px;
-  @media (max-width: 800px) {
-    margin: 0;
-    margin-bottom: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  @media (min-width: 991px) {
-    margin-left: 66px;
-    margin-top: 90px;
-  }
-`
-
-const SubmissionButton = styled.div`
-  display: inline-block;
-  -webkit-tap-highlight-color: transparent;
-  padding: 20px;
-  width: 300px;
-  height: 64px;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #029f7f;
-  border-radius: 16px;
-  margin-bottom: 35px;
-  &:hover {
-    background: #005546;
-    transition: all 0.2s ease;
-    -webkit-transition: 0.2s ease;
-  }
-  @media (max-width: 800px) {
-    margin-bottom: 15px;
-  }
-`
-
-const ShareLink = styled.div`
-  transition: all 0.2s ease;
-  -webkit-transition: 0.2s ease;
-  cursor: pointer;
-  display: flex;
-  &:hover {
-    & * {
-      color: #005546;
-      fill: #005546;
-    }
-  }
-`
-
-const ShareDescription = styled(SGreenTitle)`
-  margin-left: 8px;
-`
-
-const ShareFeedback = styled.div`
-  background: white;
-  position: absolute;
-  padding: 13px;
-  border-radius: 12px;
-  margin-top: 10px;
-  text-align: center;
-  display: none;
-  opacity: 0;
-  transition: all 1s ease;
-  -webkit-transition: all 1s ease;
-  @media (max-width: 800px) {
-    margin-top: 200px;
-  }
-`
-
-function copyToClipboard() {
-  navigator.clipboard.writeText('https://guardians.gnosis-safe.io')
-  const shareLabel = document.getElementById('#shareFeedback')
-  if (!shareLabel) return
-  shareLabel.style.opacity = '1'
-  shareLabel.style.display = 'block'
-  setTimeout(() => {
-    shareLabel.style.opacity = '0'
-    shareLabel.style.display = 'hidden'
-  }, 4000)
-}
-
 const Span = styled.span`
   color: #029f7f;
   font-weight: bold;
@@ -268,29 +183,6 @@ function BecomingAGuardian() {
             <SDots23 />
             <BecomingAGuardianImg src="/images/section3.png" />
           </AnonsImage>
-          <Submission>
-            <Link to="/form">
-              <SubmissionButton>
-                <Text size="md" color="white" strong withoutMargin>
-                  Submit an application
-                </Text>
-              </SubmissionButton>
-            </Link>
-            <Text size="sm" color="white">
-              Know someone who can be a Guardian?
-            </Text>
-            <ShareLink onClick={copyToClipboard}>
-              <ShareIcon />
-              <ShareDescription size="md" color="#029F7F" strong withoutMargin>
-                Share this link
-              </ShareDescription>
-            </ShareLink>
-            <ShareFeedback id="#shareFeedback">
-              <Text size="xs" color="#162832" withoutMargin>
-                Link copied. Mission accomplished.
-              </Text>
-            </ShareFeedback>
-          </Submission>
         </LeftColumn>
         <RightColumn>
           <Text size="sm" color="white" withoutMargin>
