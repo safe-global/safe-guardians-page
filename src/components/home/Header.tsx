@@ -1,11 +1,9 @@
-import { Link } from 'gatsby'
 import React from 'react'
 import styled from 'styled-components'
 import Discord from '../../images/icons/discord.svg'
 import Github from '../../images/icons/github.svg'
 import Twitter from '../../images/icons/twitter.svg'
 import LogoHorizontal from '../../images/LogoHorizontal.svg'
-import Text from '../layout/Text'
 
 const HeaderContainer = styled.header<{
   noMaxWidth?: boolean
@@ -37,9 +35,7 @@ const Right = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 250px;
   @media (max-width: 800px) {
-    width: auto;
     margin-left: 20px;
   }
 `
@@ -61,26 +57,6 @@ const Icon = styled.div`
   padding: 8px;
   &:hover {
     background: #b3b5c6;
-    transition: all 0.2s ease;
-    -webkit-transition: 0.2s ease;
-  }
-`
-
-const LinkSubmit = styled(Link)`
-  @media (max-width: 800px) {
-    display: none;
-  }
-`
-
-const Button = styled.div`
-  -webkit-tap-highlight-color: transparent;
-  padding: 13px 24px;
-  display: inline-block;
-  background: #029f7f;
-  color: white;
-  border-radius: 10px;
-  &:hover {
-    background: #005546;
     transition: all 0.2s ease;
     -webkit-transition: 0.2s ease;
   }
@@ -126,13 +102,6 @@ function Header({ onlyTitle, noMaxWidth }: HeadProps) {
               </Icon>
             </a>
           </SocialBlock>
-          <LinkSubmit to="/form">
-            <Button>
-              <Text size="xs" color="white" strong withoutMargin noLineHeight>
-                Submit
-              </Text>
-            </Button>
-          </LinkSubmit>
         </Right>
       )}
     </HeaderContainer>
